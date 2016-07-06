@@ -4,13 +4,12 @@
  */
 import java.util.Scanner;
 //δουλευουν και τα ελληνικα!
-//το μονο που μενει ειναι να σπαω την εκφραση
 //θα την σπαω οταν βρισκω το + - / *
 public class Askhsh1 {
 
 	public static void main (String[] args) {
 		Scanner input = new Scanner(System.in);
-		System.out.println("Παρακαλω pliktorligiste thn ar9thmitiki ekfrash: ");
+		System.out.print("Please type the numeric expression or type ENTER to exit: ");
 		String ekfrash= input.nextLine();
 		int mhkos=ekfrash.length();
 		int i,number1,number2;
@@ -33,15 +32,8 @@ public class Askhsh1 {
 			for (int j=i+2; j<mhkos;j++){
 				ekfrash2=ekfrash2+ekfrash.charAt(j);
 			}
-			System.out.println(ekfrash1+" "+sumvolo+" "+ekfrash2);
-			//spame teleia kai thn arithmitiki ekfrash!
-			//ara tora tha prepei na vriskoume pio systhma einai
-			//to elliniko einai me grammata
-			//den exo thema einai ksexoristoi oi ksenoi apo tous ellinikous xarakthres
 			number1=arabic.metatrophSeInt(ekfrash1);
 			number2=arabic.metatrophSeInt(ekfrash2);
-			System.out.println(number1);
-			System.out.println(number2);
 			if (sumvolo=='+'){
 				apotelesma=number1+number2;
 			}else if (sumvolo=='-'){
@@ -51,16 +43,12 @@ public class Askhsh1 {
 			}else{
 				apotelesma=number1/number2;
 			}
-			//kano kai thn praksh
-			//tora m menei na ta metatrepso sto antistoixo systhma. eexo to araviko thelo elliniko kai roman
-			System.out.println("arabic="+apotelesma);
-			System.out.println("roman="+roman.arabicToRoman(apotelesma));
-
-			System.out.println("Παρακαλω pliktorligiste thn ar9thmitiki ekfrash: ");
+			System.out.println("Hindu-Arabic numeral system:"+number1+" "+sumvolo+" "+number2+" =  "+apotelesma);
+			System.out.println("Roman numeral system:"+roman.arabicToRoman(number1)+" "+sumvolo+" "+roman.arabicToRoman(number2)+" =  "+roman.arabicToRoman(apotelesma));
+			System.out.println("Greek numeral system:"+greek.arabicToGreek(number1)+" "+sumvolo+" "+greek.arabicToGreek(number2)+" =  "+greek.arabicToGreek(apotelesma));
+			System.out.print("Please type the numeric expression or type ENTER to exit: ");
 			ekfrash=input.nextLine();
 			mhkos=ekfrash.length();
 		}
-	}//μαλλον δοθλεθει και το ελλινικο. παμε τωρα να κανουμε μετατροπ απο το αραβικο στο ρομαικο
-
-
+	}
 }
