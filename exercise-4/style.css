@@ -1,0 +1,111 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+body {margin:0;font-family: Goudy Old Style; background-color:#FFFFFF; text-align:justify;}
+header{background-color: #00CED1; font-family: Goudy Old Style;}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #00CED1;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #f2f2f2; color:  #00CED1;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+/* carousel stuff */
+#carousel-example-generic {
+	margin-bottom: 30px;
+}
+
+.carousel {
+	background-color: #FFFFFF;	
+}
+
+.carousel .item {
+  height: 600px;
+}
+.carousel .item img {
+  min-height: 600px;  
+}
+.carousel-control.right, .carousel-control.left { background-image: none; }
+
+/* end carousel stuff */
+.jumbotron {background-color: #FFFFFF; }
+	a {color:#00CED1}
+/*picture*/
+div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: 140px;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+/*footer*/
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #323232;
+}
+.contact-form {
+    margin-top:70px;
+}
