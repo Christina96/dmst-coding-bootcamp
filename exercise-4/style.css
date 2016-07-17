@@ -67,6 +67,10 @@ ul.topnav li.icon {display: none;}
 
 .carousel .item {
   height: 600px;
+  
+}
+.icon {
+	width: 100%;
 }
 .carousel .item img {
   min-height: 600px;  
