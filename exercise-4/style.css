@@ -74,9 +74,12 @@ ul.topnav li.icon {display: none;}
 .carousel-control.right, .carousel-control.left { background-image: none; }
 
 /* end carousel stuff */
+/*carousel 2*/
+
 .jumbotron {background-color: #FFFFFF; }
 	a {color:#00CED1}
 /*picture*/
+
 div.img {
     margin: 5px;
     border: 1px solid #ccc;
@@ -108,4 +111,16 @@ footer {
 }
 .contact-form {
     margin-top:70px;
+}
+/*button*/
+
+#top-link-block.affix-top {
+    position: absolute; /* allows it to "slide" up into view */
+    bottom: -82px; /* negative of the offset - height of link element */
+    left: 87%; /* padding from the left side of the window */
+}
+#top-link-block.affix {
+    position: fixed; /* keeps it on the bottom once in view */
+    bottom: 18px; /* height of link element */
+    left: 87%; /* padding from the left side of the window */
 }
